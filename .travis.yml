@@ -16,16 +16,18 @@ notifications:
     on_failure: always
 script:
 - bundle exec rake default
+- gem build sensu-plugins-nbzget.gemspec
+- gem install sensu-plugins-nbzget-*.gem
 deploy:
   provider: rubygems
   api_key:
-    secure: DFKMY1EwO7yA5J5hgvNKnM+6WzcqXatXq/u3z9UAoXLJQwmsVg701uSNBvqy5Bqz6/03QokQvubYDzMJ6y/54RSmvXmLrTJZbiFlQ2zS8EltrWt8E9GvZqsobvXbFaiUfMpXEC3kOc0TMuET0hejLOcBdp7fg3tLCAkEteNN27I=
+    secure: DQu8DjiafotwuI9FZz0oqkmeh66p7MGqNX/hkxp60lIMFOmPUdmVEjalcSKEELqxwVpQnTbJQ5egDjwJurmBLYue6RbKItxSsUNU0Y3K4eVl2akofWJ82KKUBn0NvtPEk390/7LfChX1ppwtVSwjQXqDBu1uuf7LiHKT4c2mVEY=
   gem: sensu-plugins-nbzget
   on:
     tags: true
+    repo: sensu-plugins/sensu-plugins-nbzget
     all_branches: true
     rvm: 1.9.3
     rvm: 2.0
     rvm: 2.1
     rvm: 2.2
-    repo: sensu-plugins/sensu-plugins-nbzget
