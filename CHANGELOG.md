@@ -5,8 +5,8 @@ This CHANGELOG follows the format listed at [Keep A Changelog](http://keepachang
 
 ## [Unreleased]
 ### Added
-- Support for Ruby 2.3.0
-- Support for Ruby 2.4.1
+- Add testing for Ruby 2.3.0
+- Add testing for Ruby 2.4.1
 
 ### Breaking Changes
 - Drop support for Ruby 1.9.3
