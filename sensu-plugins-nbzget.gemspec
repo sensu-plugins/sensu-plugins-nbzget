@@ -29,7 +29,7 @@ Gem::Specification.new do |s|
   s.version                = SensuPluginsNbzget::Version::VER_STRING
 
   s.add_runtime_dependency 'sensu-plugin', '>= 1.2', '< 5.0'
-  s.add_runtime_dependency 'rest-client', '1.8.0'
+  s.add_runtime_dependency 'rest-client', '2.1.0'
 
   s.add_development_dependency 'bundler',                   '~> 1.7'
   s.add_development_dependency 'codeclimate-test-reporter', '~> 1.0'
